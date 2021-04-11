@@ -38,8 +38,14 @@
 У вас есть Java функция в которую пользователь передает текст и регулярное выражение. Измените функцию так, чтобы
 избежать зависаний и выбрасывания исключений в процессе исполнения.
 
-public boolean matches(String text, String regex) { return Pattern.compile(regex).matcher(text).matches(); } Подсказка:
-вы не хотите вечно ждать пока matches() закончит работу.
+```java
+public boolean matches(String text,String regex) {
+        return Pattern.compile(regex).matcher(text).matches();
+}
+``` 
+
+#### Подсказка
+Вы не хотите вечно ждать пока matches() закончит работу.
 
 ## Решение
 
